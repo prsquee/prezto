@@ -14,3 +14,5 @@ fi
 source ${HOME}/perl5/perlbrew/etc/bashrc
 
 # Customize to your needs...
+
+[[ -f "${HOME}/.iterm2_shell_integration.zsh" ]] && source "${HOME}/.iterm2_shell_integration.zsh"
