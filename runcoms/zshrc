@@ -10,7 +10,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# perlbrew
-source ${HOME}/perl5/perlbrew/etc/bashrc
 
 # Customize to your needs...
+
+# perlbrew
+test -e "${HOME}/perl5/perlbrew/etc/bashrc" && source "${HOME}/perl5/perlbrew/etc/bashrc"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
