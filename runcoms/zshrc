@@ -17,3 +17,5 @@ fi
 test -e "${HOME}/perl5/perlbrew/etc/bashrc" && source "${HOME}/perl5/perlbrew/etc/bashrc"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+MAILCHECK=0
