@@ -135,8 +135,6 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
-<<<<<<< HEAD
-=======
 # Python
 #
 
@@ -157,7 +155,6 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # zstyle ':prezto:module:screen:auto-start' remote 'yes'
 
 #
->>>>>>> upstream/master
 # SSH
 #
 
