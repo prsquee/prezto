@@ -28,3 +28,6 @@
 [submodule "modules/prompt/external/powerlevel9k"]
 	path = modules/prompt/external/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "modules/zsh-packer"]
+	path = modules/zsh-packer
+	url = https://github.com/wakeful/zsh-packer.git
