@@ -11,7 +11,9 @@
 pmodload 'helper' 'spectrum'
 
 # Correct commands.
-setopt CORRECT
+if zstyle -T ':prezto:module:utility' correct; then
+  setopt CORRECT
+fi
 
 #
 # Aliases
@@ -73,7 +75,10 @@ fi
 # ls
 if is-callable 'dircolors'; then
   # GNU Core Utilities
-  alias ls='ls --group-directories-first'
+
+  if zstyle -T ':prezto:module:utility:ls' dirs-first; then
+    alias ls="${aliases[ls]:-ls} --group-directories-first"
+  fi
 
   if zstyle -t ':prezto:module:utility:ls' color; then
     # Call dircolors to define colors if they're missing
