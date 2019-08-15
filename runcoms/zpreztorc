@@ -93,9 +93,8 @@ zstyle ':prezto:module:gnu-utility' prefix 'g'
 #
 
 # Set the query found color.
+zstyle ':prezto:module:history-substring-search' color 'yes'
 zstyle ':prezto:module:history-substring-search:color' found 'blue'
-
-# Set the query not found color.
 zstyle ':prezto:module:history-substring-search:color' not-found 'red'
 
 # Set the search globbing flags.
@@ -173,13 +172,12 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
@@ -196,7 +194,7 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'

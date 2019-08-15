@@ -1,5 +1,4 @@
 # my redhat stuff
-#
 # goto fubar
 
 fu () {

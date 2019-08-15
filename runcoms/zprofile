@@ -11,6 +11,9 @@
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+  export VAGRANT_DEFAULT_PROVIDER=virtualbox
+else
+  export VAGRANT_DEFAULT_PROVIDER=libvirt
 fi
 
 #
@@ -44,6 +47,7 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  ${HOME}/bin
   $path
 )
 
