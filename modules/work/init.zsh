@@ -1,14 +1,7 @@
 # my redhat stuff
-#
-
-# goto fubar
-
-fu () {
+att () {
   if [[ $1 =~ "^[0-9]{8}$" ]]; then
-    ssh fubar "cd /fubar/$1; zsh --login"
-  elif [[ $1 =~ "^/fubar/[0-9]{8}" ]]; then
-    ssh fubar "cd $1; zsh --login"
-  else
-    printf "$0 needs a case number.\n"
+    set -i
+    /home/squee/.local/bin/attachmentmonster $1 ; cd /storage/cases/$1
   fi
 }
