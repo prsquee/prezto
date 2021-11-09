@@ -19,5 +19,5 @@ MAILCHECK=0
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-alias lnav='TERM=xterm lnav'
+#alias lnav='TERM=xterm lnav'
 
