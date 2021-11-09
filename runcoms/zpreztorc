@@ -35,9 +35,9 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'osx' \
   'completion' \
   'fasd' \
-  'osx' \
   'git' \
   'homebrew' \
   'syntax-highlighting' \
