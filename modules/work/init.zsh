@@ -4,9 +4,9 @@ zmodload zsh/pcre
 att() {
   if [[ $1 =~ "^[0-9]{8}$" ]]; then
     set -i
-    /home/squee/.local/bin/attachmentmonster $1 ; cd /storage/cases/$1
+    /usr/bin/casegrab $1 && cd /storage/cases/$1
   else 
-    /home/squee/.local/bin/attachmentmonster $CASE ; cd /storage/cases/$CASE
+    /usr/bin/casegrab $CASE && cd /storage/cases/$CASE
   fi
 }
 
