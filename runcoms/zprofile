@@ -71,5 +71,3 @@ if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 export PATH="/usr/local/opt/arm-gcc-bin@8/bin:$PATH"
-
-source ~/.chatgpt-cli/configuration
